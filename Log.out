@@ -1,0 +1,53 @@
+STAR version=2.7.3a
+STAR compilation time,server,dir=Tue Oct 8 14:26:19 EDT 2019 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+##### Command Line:
+STAR --runThreadN 4 --runMode genomeGenerate --genomeDir res/genome/star_index/ --genomeFastaFiles res/genome/ecoli.fasta --genomeSAindexNbases 9
+##### Initial USER parameters from Command Line:
+###### All USER parameters from Command Line:
+runThreadN                    4     ~RE-DEFINED
+runMode                       genomeGenerate     ~RE-DEFINED
+genomeDir                     res/genome/star_index/     ~RE-DEFINED
+genomeFastaFiles              res/genome/ecoli.fasta        ~RE-DEFINED
+genomeSAindexNbases           9     ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+runMode                           genomeGenerate
+runThreadN                        4
+genomeDir                         res/genome/star_index/
+genomeFastaFiles                  res/genome/ecoli.fasta   
+genomeSAindexNbases               9
+
+-------------------------------
+##### Final effective command line:
+STAR   --runMode genomeGenerate   --runThreadN 4   --genomeDir res/genome/star_index/   --genomeFastaFiles res/genome/ecoli.fasta      --genomeSAindexNbases 9
+----------------------------------------
+
+Finished loading and checking parameters
+Oct 25 20:18:39 ... starting to generate Genome files
+res/genome/ecoli.fasta : chr # 0  "NC_000913.3" chrStart: 0
+Estimated genome size=205718592   4718592   201000000
+GstrandBit=32
+Number of SA indices: 9283304
+Oct 25 20:18:39 ... starting to sort Suffix Array. This may take a long time...
+Number of chunks: 4;   chunks size limit: 24755472 bytes
+Oct 25 20:18:39 ... sorting Suffix Array chunks and saving them to disk...
+Writing 566144 bytes into res/genome/star_index//SA_3 ; empty space on disk = 206085799936 bytes ... done
+Writing 24602888 bytes into res/genome/star_index//SA_2 ; empty space on disk = 206085230592 bytes ...Writing 24511280 bytes into res/genome/star_index//SA_0 ; empty space on disk = 206071148544 bytes ... done
+Writing 24586120 bytes into res/genome/star_index//SA_1 ; empty space on disk = 206037532672 bytes ... done
+ done
+Oct 25 20:18:40 ... loading chunks from disk, packing SA...
+Oct 25 20:18:40 ... finished generating suffix array
+Oct 25 20:18:40 ... generating Suffix Array index
+Oct 25 20:18:40 ... completed Suffix Array index
+Oct 25 20:18:40 ... writing Genome to disk ...
+Writing 4718592 bytes into res/genome/star_index//Genome ; empty space on disk = 206085795840 bytes ... done
+SA size in bytes: 38293632
+Oct 25 20:18:40 ... writing Suffix Array to disk ...
+Writing 38293632 bytes into res/genome/star_index//SA ; empty space on disk = 206081077248 bytes ... done
+Oct 25 20:18:40 ... writing SAindex to disk
+Writing 8 bytes into res/genome/star_index//SAindex ; empty space on disk = 206042779648 bytes ... done
+Writing 80 bytes into res/genome/star_index//SAindex ; empty space on disk = 206042779648 bytes ... done
+Writing 1529171 bytes into res/genome/star_index//SAindex ; empty space on disk = 206042779648 bytes ... done
+Oct 25 20:18:40 ..... finished successfully
+DONE: Genome generation, EXITING

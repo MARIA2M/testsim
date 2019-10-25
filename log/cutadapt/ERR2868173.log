@@ -1,0 +1,100 @@
+This is cutadapt 2.5 with Python 3.7.3
+Command line parameters: -m 20 -a AGATCGGAAGAGCACACGTCTGAACTCCAGTCA -A AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT -o out/cutadapt/ERR2868173_1.trimmed.fastq.gz -p out/cutadapt/ERR2868173_2.trimmed.fastq.gz data/ERR2868173_1.fastq.gz data/ERR2868173_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 6.46 s (22 us/read; 2.79 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:            300,000
+  Read 1 with adapter:                   2,135 (0.7%)
+  Read 2 with adapter:                   1,537 (0.5%)
+Pairs that were too short:                 711 (0.2%)
+Pairs written (passing filters):       299,289 (99.8%)
+
+Total basepairs processed:    45,029,643 bp
+  Read 1:    22,523,645 bp
+  Read 2:    22,505,998 bp
+Total written (filtered):     44,910,760 bp (99.7%)
+  Read 1:    22,464,168 bp
+  Read 2:    22,446,592 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: AGATCGGAAGAGCACACGTCTGAACTCCAGTCA; Type: regular 3'; Length: 33; Trimmed: 2135 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-33 bp: 3
+
+Bases preceding removed adapters:
+  A: 15.2%
+  C: 33.3%
+  G: 10.9%
+  T: 7.2%
+  none/other: 33.3%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	964	4687.5	0	964
+4	223	1171.9	0	223
+5	198	293.0	0	198
+6	13	73.2	0	13
+7	2	18.3	0	2
+9	1	1.1	0	0 1
+10	1	0.3	1	0 1
+11	2	0.1	1	0 2
+14	2	0.0	1	0 2
+16	1	0.0	1	0 1
+19	1	0.0	1	0 1
+20	2	0.0	2	0 2
+23	1	0.0	2	0 1
+24	1	0.0	2	0 1
+27	4	0.0	2	0 4
+29	3	0.0	2	0 3
+33	1	0.0	3	0 1
+34	1	0.0	3	0 1
+39	1	0.0	3	0 1
+41	1	0.0	3	0 1
+46	1	0.0	3	0 1
+74	2	0.0	3	0 1 1
+76	709	0.0	3	0 689 20
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT; Type: regular 3'; Length: 33; Trimmed: 1537 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-33 bp: 3
+
+Bases preceding removed adapters:
+  A: 35.7%
+  C: 28.1%
+  G: 31.1%
+  T: 5.1%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1331	4687.5	0	1331
+4	115	1171.9	0	115
+5	47	293.0	0	47
+6	19	73.2	0	19
+9	3	1.1	0	0 3
+12	1	0.0	1	0 1
+14	1	0.0	1	0 1
+16	2	0.0	1	0 2
+17	1	0.0	1	0 1
+18	1	0.0	1	0 1
+19	1	0.0	1	0 1
+20	1	0.0	2	0 1
+21	2	0.0	2	0 1 1
+22	1	0.0	2	0 1
+24	2	0.0	2	0 2
+27	2	0.0	2	0 2
+29	1	0.0	2	0 1
+32	1	0.0	3	0 1
+34	1	0.0	3	0 1
+38	1	0.0	3	0 1
+39	1	0.0	3	0 0 0 1
+42	1	0.0	3	0 1
+43	1	0.0	3	0 1
